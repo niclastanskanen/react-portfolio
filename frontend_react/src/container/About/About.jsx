@@ -30,7 +30,7 @@ const abouts = [
 const About = () => {
   return (
     <>
-      <h2 className='head-text'><span>Full-Stack</span> Software Developer<br />with<br />Advanced <span>Front-End</span></h2>
+      <h2 className='head-text'><span>Full-Stack</span><br/>Software Developer</h2>
       <div className='app__profiles'>
         {abouts.map((about, index) => (
           <motion.div
