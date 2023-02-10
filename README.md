@@ -65,6 +65,9 @@
 - node-sass
 - react-icons
 ### Programs and Tools Used
+https://www.devbridge.com/articles/implementing-clean-css-bem-method/
+https://www.framer.com/motion
+https://www.canva.com/
 
 <hr>
 
