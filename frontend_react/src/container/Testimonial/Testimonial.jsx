@@ -14,7 +14,7 @@ const Testimonial = () => {
 
   useEffect(() => {
     const query = '*[_type == "testimonials"]';
-    const skillsQuery = '*[_type == "brands"]';
+    const brandsQuery = '*[_type == "brands"]';
 
     client.fetch(query)
       .then((data) => {
@@ -33,4 +33,8 @@ const Testimonial = () => {
   )
 }
 
-export default Testimonial
+export default AppWrap(
+  MotionWrap(Testimonial, 'app__testimonial'),
+  'testimonial',
+  'app__primarybg'
+);
