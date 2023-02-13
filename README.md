@@ -51,7 +51,15 @@
 
 ### Bugs
 ### Fixed Bugs
+
+Populating it here but it is an array so I have to loop over all of my experiences as well, because the objects in this array represent years.
+Every single year can have multiple experiences.
+Instead of immediately loopig over experience that works, first loop over only over the experience.
+So different years can be showed and nested map instead.
+
 ### Remaining Bugs
+
+Tooltip in skills dont show
 
 <hr>
 
@@ -64,10 +72,13 @@
 - framer-motion
 - node-sass
 - react-icons
+- react-toolkit
+
 ### Programs and Tools Used
 https://www.devbridge.com/articles/implementing-clean-css-bem-method/
 https://www.framer.com/motion
 https://www.canva.com/
+https://reactjs.org/docs/higher-order-components.html
 
 <hr>
 
