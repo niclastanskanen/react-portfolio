@@ -11,4 +11,8 @@ const Footer = () => {
   )
 }
 
-export default Footer
+export default AppWrap(
+  MotionWrap(Footer, 'app__footer'),
+  'contact',
+  'app__whitebg'
+)
