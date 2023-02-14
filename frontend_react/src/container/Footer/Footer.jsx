@@ -21,8 +21,40 @@ const Footer = () => {
       </div>
       <div className='app__footer-form app__flex'>
         <div className='app__flex'>
-          
+          <input
+            className='p-text'
+            type='text'
+            placeholder='Your Name'
+            name='name'
+            value={name}
+            onChange={handleChangeInput}
+          />
         </div>
+        <div className='app__flex'>
+          <input
+            className='p-text'
+            type='email'
+            placeholder='Your Email'
+            name='email'
+            value={email}
+            onChange={handleChangeInput}
+          />
+        </div>
+        <div>
+          <textarea
+            className='p-text'
+            placeholder='Your Message'
+            value={message}
+            name={message}
+            onChange={handleChangeInput}
+          />
+        </div>
+        <button
+          type='button'
+          className='p-text'
+          onClick={handleSubmit}>
+          Send Message
+        </button>
       </div>
     </>
   )
