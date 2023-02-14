@@ -49,6 +49,8 @@ const Footer = () => {
           <a href='tel: +46738179000' className='p-text'>+46738179000</a>
         </div>
       </div>
+
+      {!isFormSubmitted ?
       <div className='app__footer-form app__flex'>
         <div className='app__flex'>
           <input
@@ -86,6 +88,9 @@ const Footer = () => {
             {loading ? 'Sending' : 'Send Message'}
         </button>
       </div>
+      : <div>
+        <h3 className='head-text'>Thank you for getting in touch!</h3>
+      </div> }
     </>
   )
 }
