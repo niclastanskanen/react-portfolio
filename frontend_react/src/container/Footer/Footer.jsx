@@ -6,6 +6,31 @@ import { client } from '../../client';
 import './Footer.scss';
 
 const Footer = () => {
+  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+
+  const { name, email, message } = formData;
+
+  const handleChangeInput = (e) => {
+    const { name, value } = e.target;
+
+    setFormData({ ...formData, [name]: value })
+  }
+
+  const handleSubmit = () => {
+    setLoading(true);
+
+    const contact = {
+      _type: 'contact',
+      name: name,
+      email: email,
+      message: message,
+    }
+
+    
+  }
+
   return (
     <>
       <h2 className='head-text'>take a coffe & chat with me</h2>
@@ -53,7 +78,7 @@ const Footer = () => {
           type='button'
           className='p-text'
           onClick={handleSubmit}>
-          Send Message
+            {loading ? 'Sending' : 'Send Message'}
         </button>
       </div>
     </>
