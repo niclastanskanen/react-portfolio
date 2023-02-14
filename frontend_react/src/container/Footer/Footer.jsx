@@ -28,7 +28,12 @@ const Footer = () => {
       message: message,
     }
 
-    
+    client.create(contact)
+      .then(() => {
+        setLoading(false);
+        setIsFormSubmitted(true);
+      })
+
   }
 
   return (
