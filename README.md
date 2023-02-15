@@ -59,7 +59,7 @@ So different years can be showed and nested map instead.
 
 ### Remaining Bugs
 
-Tooltip in skills dont show
+Tooltip in skills bug on mobile view
 
 <hr>
 
