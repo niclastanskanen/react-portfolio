@@ -36,6 +36,9 @@
 ### Design
 ### Wireframes
 ### Color-scheme
+
+![Color Scheme](docs/image_readme/colorscheme.png)
+
 ### Typography
 
 <hr>
